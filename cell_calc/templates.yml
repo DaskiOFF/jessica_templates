@@ -1,0 +1,20 @@
+code_files: 
+  - {name: Cell.swift,
+    template_path: code/Cell.swift,
+    output_path: "{{.projectName}}/Layers/PresentationLayer/components/TableViewCells/{{.moduleInfo.name}}",
+    rewrite: false}
+
+  - {name: "CellVM.swift",
+    template_path: code/CellVM.swift,
+    output_path: "{{.projectName}}/Layers/PresentationLayer/components/TableViewCells/{{.moduleInfo.name}}", 
+    rewrite: false}
+
+  - {name: "CellLayout.swift",
+    template_path: code/CellLayout.swift,
+    output_path: "{{.projectName}}/Layers/PresentationLayer/components/TableViewCells/{{.moduleInfo.name}}", 
+    rewrite: false}
+
+  - {name: "CellCalculator.swift",
+    template_path: code/CellCalculator.swift,
+    output_path: "{{.projectName}}/Layers/PresentationLayer/components/TableViewCells/{{.moduleInfo.name}}", 
+    rewrite: false}
