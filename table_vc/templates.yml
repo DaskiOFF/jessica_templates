@@ -1,0 +1,5 @@
+code_files: 
+  - {name: VC.swift,
+    template_path: code/VC.swift,
+    output_path: "{{.projectName}}/Layers/PresentationLayer/ViewControllers/{{.moduleInfo.name}}",
+    rewrite: false}
