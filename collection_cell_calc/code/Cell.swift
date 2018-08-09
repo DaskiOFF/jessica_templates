@@ -1,8 +1,8 @@
 import UIKit
 import RKTableAdapter
 
-class {{ .moduleInfo.name }}Cell: UITableViewCell, ConfigurableCell {
-    typealias ViewModelType = {{ .moduleInfo.name }}CellVM
+class {{ .moduleInfo.name }}CollectionCell: UICollectionViewCell, ConfigurableCell {
+    typealias ViewModelType = {{ .moduleInfo.name }}CollectionCellVM
 
     // MARK: - Properties
     var viewModel: ViewModelType?
@@ -10,8 +10,8 @@ class {{ .moduleInfo.name }}Cell: UITableViewCell, ConfigurableCell {
     // MARK: - UI
 
     // MARK: - Init
-    override init(style: UITableViewCellStyle, reuseIdentifier: String?) {
-        super.init(style: style, reuseIdentifier: reuseIdentifier)
+    override init(frame: CGRect) {
+        super.init(frame: frame)
         configure()
     }
 
@@ -29,9 +29,12 @@ class {{ .moduleInfo.name }}Cell: UITableViewCell, ConfigurableCell {
 
     }
 
+    func updateFrames() {
+
+    }
+
     // MARK: - Configure
     private func configure() {
-
     }
 
     // MARK: - ConfigurableCell
@@ -41,4 +44,10 @@ class {{ .moduleInfo.name }}Cell: UITableViewCell, ConfigurableCell {
     // MARK: - Actions
 
     // MARK: - Private
+    override func layoutSubviews() {
+        super.layoutSubviews()
+        viewModel?.width = bounds.width
+
+        updateFrames()
+    }
 }

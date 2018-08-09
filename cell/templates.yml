@@ -1,10 +1,10 @@
 code_files: 
-  - {name: Cell.swift,
+  - {name: TableCell.swift,
     template_path: code/Cell.swift,
     output_path: "{{.projectName}}/Layers/PresentationLayer/components/TableViewCells/{{.moduleInfo.name}}",
     rewrite: false}
 
-  - {name: "{{.moduleInfo.name}}CellVM.swift",
+  - {name: "TableCellVM.swift",
     template_path: code/CellVM.swift,
     output_path: "{{.projectName}}/Layers/PresentationLayer/components/TableViewCells/{{.moduleInfo.name}}", 
     rewrite: false}

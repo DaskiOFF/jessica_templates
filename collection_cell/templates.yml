@@ -1,0 +1,10 @@
+code_files: 
+  - {name: CollectionCell.swift,
+    template_path: code/Cell.swift,
+    output_path: "{{.projectName}}/Layers/PresentationLayer/components/CollectionViewCells/{{.moduleInfo.name}}",
+    rewrite: false}
+
+  - {name: "CollectionCellVM.swift",
+    template_path: code/CellVM.swift,
+    output_path: "{{.projectName}}/Layers/PresentationLayer/components/CollectionViewCells/{{.moduleInfo.name}}", 
+    rewrite: false}
