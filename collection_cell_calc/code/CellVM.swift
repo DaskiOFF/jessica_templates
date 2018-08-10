@@ -16,7 +16,7 @@ class {{ .moduleInfo.name }}CollectionCellVM: CollectionCellVM, Equatable {
     }
 
     // MARK: - CollectionItemSizeComputable
-    var defaultSize: CGSize? {
+    override var defaultSize: CGSize? {
         let layout = calculator.layout(with: self, width: width)
         return CGSize(width: layout.width, height: layout.height)
     }
