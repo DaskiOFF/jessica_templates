@@ -19,14 +19,17 @@ class {{ .moduleInfo.name }}VC: UIViewController {
     lazy var collectionAdapter = CollectionViewAdapter(collectionView: collectionView)
 
     // MARK: - UI
-    lazy var collectionView: UICollectionView = {
+    lazy var collectionViewFlow: UICollectionViewFlowLayout = {
         let flow = UICollectionViewFlowLayout()
         flow.minimumInteritemSpacing = 10
         flow.minimumLineSpacing = 10
         flow.sectionInset.top = 20
         flow.scrollDirection = .vertical
 
-        let cv = UICollectionView(frame: .zero, collectionViewLayout: flow)
+        return flow
+    }()
+    lazy var collectionView: UICollectionView = {
+        let cv = UICollectionView(frame: .zero, collectionViewLayout: collectionViewFlow)
         cv.backgroundColor = .white
         return cv
     }()
