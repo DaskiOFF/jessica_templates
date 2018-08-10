@@ -10,7 +10,7 @@ class {{ .moduleInfo.name }}CollectionCellVM: CollectionCellVM, Equatable {
     }
 
     // MARK: - CollectionItemSizeComputable
-    var defaultSize: CGSize? {
+    override var defaultSize: CGSize? {
         return CGSize(width: 50, height: 50)
     }
 
