@@ -21,7 +21,6 @@ class {{ .moduleInfo.name }}VC: UIViewController {
     // MARK: - UI
     lazy var collectionView: UICollectionView = {
         let flow = UICollectionViewFlowLayout()
-        flow.itemSize = CGSize(width: 90, height: 50)
         flow.minimumInteritemSpacing = 10
         flow.minimumLineSpacing = 10
         flow.sectionInset.top = 20
@@ -75,7 +74,7 @@ class {{ .moduleInfo.name }}VC: UIViewController {
     }
     
     // MARK: Make sections
-    private func makeTestSection(_ list: TableList) {
+    private func makeTestSection(_ list: CollectionList) {
         let section = list[SectionIds.diary.rawValue]
         
         do {
