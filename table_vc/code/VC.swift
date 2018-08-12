@@ -1,4 +1,5 @@
 import UIKit
+import RKTableAdapter
 
 class {{ .moduleInfo.name }}VC: UIViewController {
     enum SectionIds: String {
