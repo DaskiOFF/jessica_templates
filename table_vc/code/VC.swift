@@ -87,7 +87,7 @@ class {{ .moduleInfo.name }}VC: UIViewController {
     }
     
     // MARK: Table Actions
-    private lazy var tableCellAction: CellVM.ActionType = { [weak self] _ in
+    private lazy var tableCellAction: TableCellVM.ActionType = { [weak self] _ in
         guard let sself = self else { return }
         
         print("cell taped")
