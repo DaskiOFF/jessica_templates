@@ -1,7 +1,7 @@
 import UIKit
 import RKTableAdapter
 
-class {{ .moduleInfo.name }}CellVM: CellVM, Equatable {
+class {{ .moduleInfo.name }}CellVM: TableCellVM, Equatable {
     // MARK: - Properties
 
     // MARK: - Init
@@ -16,7 +16,7 @@ class {{ .moduleInfo.name }}CellVM: CellVM, Equatable {
 
     // MARK: - Equatable
     static func == (lhs: {{ .moduleInfo.name }}CellVM, rhs: {{ .moduleInfo.name }}CellVM) -> Bool {
-        // guard lhs.property == rhs.property else { return false }
+        //guard lhs.property == rhs.property else { return false }
         return true
     }
 }
