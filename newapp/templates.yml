@@ -1,0 +1,36 @@
+code_files: 
+  - {name: AppConfig.swift,
+    template_path: config/AppConfig.swift,
+    output_path: "{{.projectName}}/Application/Config",
+    rewrite: true}
+  
+  - {name: AppConfigDev.swift,
+    template_path: config/AppConfigDev.swift,
+    output_path: "{{.projectName}}/Application/Config",
+    rewrite: true}
+  
+  - {name: AppConfigProd.swift,
+    template_path: config/AppConfigProd.swift,
+    output_path: "{{.projectName}}/Application/Config",
+    rewrite: true}
+  
+  - {name: AppConfigFactory.swift,
+    template_path: config/AppConfigFactory.swift,
+    output_path: "{{.projectName}}/Application/Config",
+    rewrite: true}
+
+  
+  - {name: AppCoordinator.swift,
+    template_path: appflow/AppCoordinator.swift,
+    output_path: "{{.projectName}}/Presentation/Flows/App",
+    rewrite: true}
+
+  - {name: MainFlow.swift,
+    template_path: appflow/MainFlow.swift,
+    output_path: "{{.projectName}}/Presentation/Flows/Main",
+    rewrite: true}
+
+  - {name: MainVC.swift,
+    template_path: viewcontrollers/MainVC.swift,
+    output_path: "{{.projectName}}/Presentation/ViewControllers/Main",
+    rewrite: true}
