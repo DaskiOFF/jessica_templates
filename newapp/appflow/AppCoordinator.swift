@@ -17,6 +17,7 @@ MainFlowOutput {
     // MARK: - Start
     func start() {
         let coordinator = MainFlow(rootViewController: self.rootViewController)
+        add(coordinator)
         coordinator.output = self
         coordinator.start()
     }
