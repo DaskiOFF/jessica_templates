@@ -1,0 +1,5 @@
+code_files: 
+  - {name: Flow.swift,
+    template_path: code/Flow.swift,
+    output_path: "{{.projectName}}/Presentation/Flows/{{.moduleInfo.name}}",
+    rewrite: false}
