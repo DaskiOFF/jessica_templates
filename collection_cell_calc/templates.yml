@@ -1,0 +1,24 @@
+variables:
+  basepath: "{{.projectName}}/Presentation/Components/CollectionViewCells/{{.moduleInfo.name}}"
+  prefix: "Collection"
+
+code_files: 
+  - {name: "{{.moduleInfo.name}}CollectionCell.swift",
+    template_path: code/Cell.swift,
+    output_path: "{{.var.basepath}}",
+    rewrite: false}
+
+  - {name: "{{.moduleInfo.name}}CollectionCellVM.swift",
+    template_path: code/CellVM.swift,
+    output_path: "{{.var.basepath}}", 
+    rewrite: false}
+
+  - {name: "{{.moduleInfo.name}}CellLayout.swift",
+    template_path: ../calculator/code/CellLayout.swift,
+    output_path: "{{.var.basepath}}", 
+    rewrite: false}
+
+  - {name: "{{.moduleInfo.name}}CellCalculator.swift",
+    template_path: ../calculator/code/CellCalculator.swift,
+    output_path: "{{.var.basepath}}", 
+    rewrite: false}

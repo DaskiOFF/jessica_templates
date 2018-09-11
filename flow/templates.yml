@@ -1,0 +1,8 @@
+variables:
+  basepath: "{{.projectName}}/Presentation/Flows/{{.moduleInfo.name}}"
+
+code_files: 
+  - {name: "{{.moduleInfo.name}}Flow.swift",
+    template_path: code/Flow.swift,
+    output_path: "{{.var.basepath}}",
+    rewrite: false}

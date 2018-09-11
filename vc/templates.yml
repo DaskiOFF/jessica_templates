@@ -1,0 +1,8 @@
+variables:
+  basepath: "{{.projectName}}/Presentation/ViewControllers/{{.moduleInfo.name}}"
+
+code_files: 
+  - {name: "{{.moduleInfo.name}}VC.swift",
+    template_path: code/VC.swift,
+    output_path: "{{.var.basepath}}",
+    rewrite: false}

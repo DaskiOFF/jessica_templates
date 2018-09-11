@@ -1,0 +1,24 @@
+variables:
+  basepath: "{{.projectName}}/Presentation/Components/TableViewCells/{{.moduleInfo.name}}"
+  prefix: "Table"
+
+code_files: 
+  - {name: "{{.moduleInfo.name}}TableCell.swift",
+    template_path: code/Cell.swift,
+    output_path: "{{.var.basepath}}",
+    rewrite: false}
+
+  - {name: "{{.moduleInfo.name}}TableCellVM.swift",
+    template_path: code/CellVM.swift,
+    output_path: "{{.var.basepath}}",
+    rewrite: false}
+
+  - {name: "{{.moduleInfo.name}}TableCellLayout.swift",
+    template_path: ../calculator/code/CellLayout.swift,
+    output_path: "{{.var.basepath}}",
+    rewrite: false}
+
+  - {name: "{{.moduleInfo.name}}TableCellCalculator.swift",
+    template_path: ../calculator/code/CellCalculator.swift,
+    output_path: "{{.var.basepath}}",
+    rewrite: false}
