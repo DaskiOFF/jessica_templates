@@ -24,6 +24,8 @@ class {{ .moduleInfo.name }}VC: UIViewController {
     weak var output: {{ .moduleInfo.name }}VCOutput!
     lazy var collectionAdapter = CollectionViewAdapter(collectionView: collectionView)
 
+    // MARK: - DI
+
     // MARK: - UI
     lazy var collectionViewFlow: UICollectionViewFlowLayout = {
         let flow = UICollectionViewFlowLayout()

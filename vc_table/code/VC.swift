@@ -24,6 +24,8 @@ class {{ .moduleInfo.name }}VC: UIViewController {
     weak var output: {{ .moduleInfo.name }}VCOutput!
     lazy var tableAdapter = TableViewAdapter(tableView: self.tableView)
 
+    // MARK: - DI
+
     // MARK: - UI
     let tableView: UITableView = UITableView()
 

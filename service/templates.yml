@@ -1,0 +1,18 @@
+variables:
+  basepath: "{{.projectName}}/BusinessLogic/{{if eq .answers.isEntity \"yes\"}}Entities/{{end}}{{.moduleInfo.name}}"
+
+questions:
+  - {key: isEntity,
+    text: "Service относится к сущностям? (yes | no): ",
+    required: true}
+
+code_files:
+  - {name: "Service{{.moduleInfo.name}}Default.swift", 
+    template_path: code/Service.swift, 
+    output_path: "{{.var.basepath}}",
+    rewrite: false}
+
+  - {name: "Service{{.moduleInfo.name}}.swift", 
+    template_path: code/ServiceProtocol.swift, 
+    output_path: "{{.var.basepath}}",
+    rewrite: false}

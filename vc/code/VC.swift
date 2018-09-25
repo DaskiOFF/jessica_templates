@@ -8,6 +8,8 @@ class {{ .moduleInfo.name }}VC: UIViewController {
     // MARK: - Variables
     weak var output: {{ .moduleInfo.name }}VCOutput!
 
+    // MARK: - DI
+
     // MARK: - UI
 
     // MARK: - Init / Lifecycle
